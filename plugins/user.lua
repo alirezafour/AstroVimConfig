@@ -1,4 +1,5 @@
 return {
+  -- TODO Test
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
@@ -9,4 +10,14 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "folke/todo-comments.nvim",
+    require = "nvim-lua/plenary.nvim",
+    opts = {},
+    event = "User AstroFile",
+    cmd = { "TodoQuickFix" },
+    keys = {
+      { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
+    },
+  },
 }
