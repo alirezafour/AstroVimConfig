@@ -20,4 +20,11 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
   },
+  {
+    "mbbill/undotree",
+    event = "User AstroFile",
+    keys = {
+      { "<leader>Ut", "<cmd>UndotreeToggle<cr>", desc = "Open UndoTree" },
+    },
+  },
 }
